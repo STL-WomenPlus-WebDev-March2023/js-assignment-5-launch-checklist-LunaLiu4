@@ -9,10 +9,8 @@ window.addEventListener("load", function () {
         event.preventDefault();
         let pilot = document.querySelector("input[name=pilotName]").value;
         let copilot = document.querySelector("input[name=copilotName]").value;
-        let fuelLevel = parseInt(document.querySelector("input[name=fuelLevel]").value);
-        let cargoLevel = parseInt(document.querySelector("input[name=cargoMass]").value);
-        // console.log(typeof (pilot));
-        // console.log(typeof (fuelLevel));
+        let fuelLevel = document.querySelector("input[name=fuelLevel]").value;
+        let cargoLevel = document.querySelector("input[name=cargoMass]").value;
         // console.log(pilot, copilot, fuelLevel, cargoLevel);
         formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
         let listedPlanets;
