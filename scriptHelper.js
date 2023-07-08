@@ -16,7 +16,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     */
     let missionTarget = document.getElementById('missionTarget');
     missionTarget.innerHTML = `
-    <h2>Mission Destionation</h2>
+    <h2>Mission Destination</h2>
     <ol>
         <li>Name: ${name}</li>
         <li>Diameter: ${diameter}</li>
@@ -29,7 +29,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 }
 
 function validateInput(testInput) {
-    if (testInput === '' || testInput === 0) {
+    if (testInput === '') {
         return 'Empty';
     } else if (isNaN(testInput)) {
         return 'Not a Number';

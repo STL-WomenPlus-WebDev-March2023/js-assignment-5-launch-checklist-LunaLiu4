@@ -23,11 +23,11 @@ window.addEventListener("load", function () {
         event.preventDefault();
         let pilot = document.querySelector("input[name=pilotName]").value;
         let copilot = document.querySelector("input[name=copilotName]").value;
-        let fuelLevel = Number(document.querySelector("input[name=fuelLevel]").value);
-        let cargoLevel = Number(document.querySelector("input[name=cargoMass]").value);
-        console.log(typeof (pilot));
-        console.log(typeof (fuelLevel));
-        console.log(pilot, copilot, fuelLevel, cargoLevel);
+        let fuelLevel = parseInt(document.querySelector("input[name=fuelLevel]").value);
+        let cargoLevel = parseInt(document.querySelector("input[name=cargoMass]").value);
+        // console.log(typeof (pilot));
+        // console.log(typeof (fuelLevel));
+        // console.log(pilot, copilot, fuelLevel, cargoLevel);
         formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
 
     })
